@@ -72,10 +72,10 @@ namespace ConstructionTracker.Web.Host.Startup
         options.AddPolicy(
             "MobileApp",
             builder => builder
-                .AllowAnyOrigin()  // Mobile app için tüm origin'lere izin ver
+                .SetIsOriginAllowed(origin => true)  // Tüm origin'lere izin ver
                 .AllowAnyHeader()
                 .AllowAnyMethod()
-                .DisallowCredentials() // Credentials'ı devre dışı bırak
+                .AllowCredentials() // Credentials'ı aktif et
         );
     }
 );
@@ -114,15 +114,12 @@ namespace ConstructionTracker.Web.Host.Startup
 
             app.UseAbp(options => { options.UseAbpRequestLocalization = false; }); // Initializes ABP framework.
 
-            // CORS'u en başta kullan
-            app.UseCors("MobileApp"); // Enable CORS for mobile app!
-
             app.UseStaticFiles();
 
             app.UseRouting();
 
-            // CORS'u routing'den sonra tekrar kullan
-            app.UseCors("MobileApp");
+            // CORS'u routing'den sonra kullan
+            app.UseCors("MobileApp"); // Enable CORS for mobile app!
 
             app.UseAuthentication();
             app.UseAuthorization();
