@@ -9,7 +9,7 @@ public static class ConstructionTrackerDbContextConfigurer
     {
         builder.UseNpgsql(connectionString);
     }
-
+     
     public static void Configure(DbContextOptionsBuilder<ConstructionTrackerDbContext> builder, DbConnection connection)
     {
         builder.UseNpgsql(connection);
