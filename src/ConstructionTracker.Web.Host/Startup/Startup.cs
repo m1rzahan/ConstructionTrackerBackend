@@ -3,11 +3,13 @@ using Abp.AspNetCore.Mvc.Antiforgery;
 using Abp.AspNetCore.SignalR.Hubs;
 using Abp.Castle.Logging.Log4Net;
 using Abp.Extensions;
-using ConstructionTracker.Configuration;
-using ConstructionTracker.Identity;
 using Castle.Facilities.Logging;
+using ConstructionTracker.Configuration;
+using ConstructionTracker.EntityFrameworkCore;
+using ConstructionTracker.Identity;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -17,7 +19,6 @@ using System;
 using System.IO;
 using System.Linq;
 using System.Reflection;
-using Microsoft.EntityFrameworkCore;
 
 namespace ConstructionTracker.Web.Host.Startup
 {
@@ -100,7 +101,7 @@ namespace ConstructionTracker.Web.Host.Startup
             // Database'i otomatik oluştur
             using (var scope = app.ApplicationServices.CreateScope())
             {
-                var dbContext = scope.ServiceProvider.GetRequiredService<ConstructionTracker.EntityFrameworkCore.ConstructionTrackerDbContext>();
+                var dbContext = scope.ServiceProvider.GetRequiredService<ConstructionTrackerDbContext>();
                 dbContext.Database.EnsureCreated();
             }
 
