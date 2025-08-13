@@ -46,4 +46,14 @@ public class ConstructionTrackerEntityFrameworkModule : AbpModule
             SeedHelper.SeedHostDb(IocManager);
         }
     }
+
+    public override void OnApplicationInitialization()
+    {
+        // Auto-migrate database
+        using (var scope = IocManager.CreateScope())
+        {
+            var dbContext = scope.Resolve<ConstructionTrackerDbContext>();
+            dbContext.Database.EnsureCreated();
+        }
+    }
 }

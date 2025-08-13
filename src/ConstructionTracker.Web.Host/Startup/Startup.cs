@@ -17,6 +17,7 @@ using System;
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using Microsoft.EntityFrameworkCore;
 
 namespace ConstructionTracker.Web.Host.Startup
 {
@@ -95,6 +96,13 @@ namespace ConstructionTracker.Web.Host.Startup
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggerFactory loggerFactory)
         {
             app.UseAbp(options => { options.UseAbpRequestLocalization = false; }); // Initializes ABP framework.
+
+            // Database'i otomatik oluştur
+            using (var scope = app.ApplicationServices.CreateScope())
+            {
+                var dbContext = scope.ServiceProvider.GetRequiredService<ConstructionTracker.EntityFrameworkCore.ConstructionTrackerDbContext>();
+                dbContext.Database.EnsureCreated();
+            }
 
             // CORS'u en başta kullan
             app.UseCors("MobileApp"); // Enable CORS for mobile app!
