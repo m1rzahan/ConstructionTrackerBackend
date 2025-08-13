@@ -1,6 +1,6 @@
 [build]
 builder = "DOCKERFILE"
-dockerfilePath = "Dockerfile"
+dockerfilePath = "Dockerfile.simple"
 
 [deploy]
 startCommand = "dotnet ConstructionTracker.Web.Host.dll"
