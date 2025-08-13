@@ -96,14 +96,22 @@ namespace ConstructionTracker.Web.Host.Startup
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggerFactory loggerFactory)
         {
-            app.UseAbp(options => { options.UseAbpRequestLocalization = false; }); // Initializes ABP framework.
-
-            // Database'i otomatik oluştur
-            using (var scope = app.ApplicationServices.CreateScope())
+            // Database'i ABP initialize olmadan önce oluştur
+            try
             {
-                var dbContext = scope.ServiceProvider.GetRequiredService<ConstructionTrackerDbContext>();
-                dbContext.Database.EnsureCreated();
+                using (var scope = app.ApplicationServices.CreateScope())
+                {
+                    var dbContext = scope.ServiceProvider.GetRequiredService<ConstructionTrackerDbContext>();
+                    dbContext.Database.EnsureCreated();
+                }
             }
+            catch (Exception ex)
+            {
+                // Database oluşturma hatası - log'la ama devam et
+                Console.WriteLine($"Database oluşturma hatası: {ex.Message}");
+            }
+
+            app.UseAbp(options => { options.UseAbpRequestLocalization = false; }); // Initializes ABP framework.
 
             // CORS'u en başta kullan
             app.UseCors("MobileApp"); // Enable CORS for mobile app!

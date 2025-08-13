@@ -14,7 +14,7 @@ public class ConstructionTrackerEntityFrameworkModule : AbpModule
     /* Used it tests to skip dbcontext registration, in order to use in-memory database of EF Core */
     public bool SkipDbContextRegistration { get; set; }
 
-    public bool SkipDbSeed { get; set; }
+    public bool SkipDbSeed { get; set; } = true; // Geçici olarak seed data'yı devre dışı bırak
 
     public override void PreInitialize()
     {
