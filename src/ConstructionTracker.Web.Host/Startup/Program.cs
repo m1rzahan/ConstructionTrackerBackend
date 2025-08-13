@@ -2,6 +2,7 @@
 using Abp.Dependency;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
+using System;
 
 namespace ConstructionTracker.Web.Host.Startup
 {
@@ -18,7 +19,9 @@ namespace ConstructionTracker.Web.Host.Startup
                 {
                     webBuilder.UseStartup<Startup>();
                     
-                    webBuilder.UseUrls("http://0.0.0.0:44311", "https://0.0.0.0:44312");
+                    // Railway için port ayarları
+                    var port = Environment.GetEnvironmentVariable("PORT") ?? "44311";
+                    webBuilder.UseUrls($"http://0.0.0.0:{port}");
                 })
                 .UseCastleWindsor(IocManager.Instance.IocContainer);
     }

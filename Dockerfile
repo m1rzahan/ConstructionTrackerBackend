@@ -3,19 +3,24 @@ FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS base
 WORKDIR /app
 EXPOSE 80
 EXPOSE 443
+EXPOSE 44311
 
 # Use the SDK image to build the application
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
 
-# Copy csproj files and restore dependencies
+# Copy solution file first
+COPY ["*.sln", "./"]
+
+# Copy all csproj files and restore dependencies
 COPY ["src/ConstructionTracker.Web.Host/ConstructionTracker.Web.Host.csproj", "src/ConstructionTracker.Web.Host/"]
 COPY ["src/ConstructionTracker.Web.Core/ConstructionTracker.Web.Core.csproj", "src/ConstructionTracker.Web.Core/"]
 COPY ["src/ConstructionTracker.Application/ConstructionTracker.Application.csproj", "src/ConstructionTracker.Application/"]
 COPY ["src/ConstructionTracker.Core/ConstructionTracker.Core.csproj", "src/ConstructionTracker.Core/"]
 COPY ["src/ConstructionTracker.EntityFrameworkCore/ConstructionTracker.EntityFrameworkCore.csproj", "src/ConstructionTracker.EntityFrameworkCore/"]
 
-RUN dotnet restore "src/ConstructionTracker.Web.Host/ConstructionTracker.Web.Host.csproj"
+# Restore all dependencies
+RUN dotnet restore
 
 # Copy all source code
 COPY . .
