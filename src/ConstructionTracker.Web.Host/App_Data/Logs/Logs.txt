@@ -11561,3 +11561,274 @@ INFO  2025-08-14 00:12:57,571 [1    ] Microsoft.Hosting.Lifetime               -
 INFO  2025-08-14 00:12:57,574 [1    ] Microsoft.Hosting.Lifetime               - Application started. Press Ctrl+C to shut down.
 INFO  2025-08-14 00:12:57,576 [1    ] Microsoft.Hosting.Lifetime               - Hosting environment: Development
 INFO  2025-08-14 00:12:57,577 [1    ] Microsoft.Hosting.Lifetime               - Content root path: C:\CT\backend\aspnet-core\src\ConstructionTracker.Web.Host
+DEBUG 2025-08-14 01:16:46,271 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2025-08-14 01:16:46,612 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2025-08-14 01:16:46,619 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ConstructionTracker.Web.Host.Startup.ConstructionTrackerWebHostModule, ConstructionTracker.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:16:46,621 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ConstructionTracker.ConstructionTrackerWebCoreModule, ConstructionTracker.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:16:46,621 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ConstructionTracker.ConstructionTrackerApplicationModule, ConstructionTracker.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:16:46,621 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ConstructionTracker.ConstructionTrackerCoreModule, ConstructionTracker.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:16:46,622 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:16:46,622 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:16:46,622 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:16:46,623 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:16:46,623 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ConstructionTracker.EntityFrameworkCore.ConstructionTrackerEntityFrameworkModule, ConstructionTracker.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:16:46,623 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:16:46,623 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:16:46,624 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:16:46,624 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:16:46,624 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:16:46,624 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:16:46,625 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2025-08-14 01:16:46,746 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2025-08-14 01:16:46,746 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2025-08-14 01:16:46,746 [1    ] o.Configuration.LanguageManagementConfig - Converted ConstructionTracker (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2025-08-14 01:16:46,746 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2025-08-14 01:16:47,004 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: ConstructionTracker.EntityFrameworkCore.ConstructionTrackerDbContext, ConstructionTracker.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:16:47,285 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2025-08-14 01:16:47,331 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2025-08-14 01:16:47,363 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2025-08-14 01:16:47,377 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: ConstructionTracker
+DEBUG 2025-08-14 01:16:47,397 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2025-08-14 01:16:47,405 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2025-08-14 01:16:47,410 [1    ] , Culture=neutral, PublicKeyToken=null]] - Start background worker: Abp.Authorization.Users.UserTokenExpirationWorker`2[[ConstructionTracker.MultiTenancy.Tenant, ConstructionTracker.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[ConstructionTracker.Authorization.Users.User, ConstructionTracker.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+DEBUG 2025-08-14 01:16:47,425 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 14 classes define auto mapping attributes
+DEBUG 2025-08-14 01:16:47,425 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ConstructionTracker.Users.Dto.CreateUserDto
+DEBUG 2025-08-14 01:16:47,427 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ConstructionTracker.Users.Dto.UserDto
+DEBUG 2025-08-14 01:16:47,428 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ConstructionTracker.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2025-08-14 01:16:47,428 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ConstructionTracker.Sessions.Dto.UserLoginInfoDto
+DEBUG 2025-08-14 01:16:47,428 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ConstructionTracker.Roles.Dto.PermissionDto
+DEBUG 2025-08-14 01:16:47,429 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ConstructionTracker.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2025-08-14 01:16:47,429 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ConstructionTracker.MultiTenancy.Dto.TenantDto
+DEBUG 2025-08-14 01:16:47,429 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ConstructionTracker.ConstructionTracker.Dto.ActivityLogDto
+DEBUG 2025-08-14 01:16:47,429 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ConstructionTracker.ConstructionTracker.Dto.ProjectDto
+DEBUG 2025-08-14 01:16:47,429 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ConstructionTracker.ConstructionTracker.Dto.QrCodeScanDto
+DEBUG 2025-08-14 01:16:47,429 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ConstructionTracker.ConstructionTracker.Dto.TaskDto
+DEBUG 2025-08-14 01:16:47,429 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ConstructionTracker.ConstructionTracker.Dto.TaskCommentDto
+DEBUG 2025-08-14 01:16:47,429 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ConstructionTracker.ConstructionTracker.Dto.TaskPhotoDto
+DEBUG 2025-08-14 01:16:47,430 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ConstructionTracker.ConstructionTracker.Dto.ConstructionTrackerUserDto
+DEBUG 2025-08-14 01:21:31,501 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2025-08-14 01:21:31,535 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2025-08-14 01:21:31,546 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ConstructionTracker.Web.Host.Startup.ConstructionTrackerWebHostModule, ConstructionTracker.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:21:31,547 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ConstructionTracker.ConstructionTrackerWebCoreModule, ConstructionTracker.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:21:31,547 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ConstructionTracker.ConstructionTrackerApplicationModule, ConstructionTracker.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:21:31,548 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ConstructionTracker.ConstructionTrackerCoreModule, ConstructionTracker.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:21:31,548 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:21:31,548 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:21:31,548 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:21:31,549 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:21:31,549 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ConstructionTracker.EntityFrameworkCore.ConstructionTrackerEntityFrameworkModule, ConstructionTracker.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:21:31,550 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:21:31,550 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:21:31,550 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:21:31,550 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:21:31,551 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:21:31,551 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:21:31,552 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2025-08-14 01:21:31,593 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2025-08-14 01:21:31,593 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2025-08-14 01:21:31,593 [1    ] o.Configuration.LanguageManagementConfig - Converted ConstructionTracker (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2025-08-14 01:21:31,593 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2025-08-14 01:21:31,859 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: ConstructionTracker.EntityFrameworkCore.ConstructionTrackerDbContext, ConstructionTracker.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:21:32,014 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2025-08-14 01:21:32,062 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2025-08-14 01:21:32,096 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2025-08-14 01:21:32,114 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: ConstructionTracker
+DEBUG 2025-08-14 01:21:32,136 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2025-08-14 01:21:32,142 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2025-08-14 01:21:32,148 [1    ] , Culture=neutral, PublicKeyToken=null]] - Start background worker: Abp.Authorization.Users.UserTokenExpirationWorker`2[[ConstructionTracker.MultiTenancy.Tenant, ConstructionTracker.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[ConstructionTracker.Authorization.Users.User, ConstructionTracker.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+DEBUG 2025-08-14 01:21:32,165 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 14 classes define auto mapping attributes
+DEBUG 2025-08-14 01:21:32,165 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ConstructionTracker.Users.Dto.CreateUserDto
+DEBUG 2025-08-14 01:21:32,168 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ConstructionTracker.Users.Dto.UserDto
+DEBUG 2025-08-14 01:21:32,169 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ConstructionTracker.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2025-08-14 01:21:32,169 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ConstructionTracker.Sessions.Dto.UserLoginInfoDto
+DEBUG 2025-08-14 01:21:32,169 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ConstructionTracker.Roles.Dto.PermissionDto
+DEBUG 2025-08-14 01:21:32,169 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ConstructionTracker.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2025-08-14 01:21:32,169 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ConstructionTracker.MultiTenancy.Dto.TenantDto
+DEBUG 2025-08-14 01:21:32,169 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ConstructionTracker.ConstructionTracker.Dto.ActivityLogDto
+DEBUG 2025-08-14 01:21:32,169 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ConstructionTracker.ConstructionTracker.Dto.ProjectDto
+DEBUG 2025-08-14 01:21:32,169 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ConstructionTracker.ConstructionTracker.Dto.QrCodeScanDto
+DEBUG 2025-08-14 01:21:32,169 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ConstructionTracker.ConstructionTracker.Dto.TaskDto
+DEBUG 2025-08-14 01:21:32,170 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ConstructionTracker.ConstructionTracker.Dto.TaskCommentDto
+DEBUG 2025-08-14 01:21:32,170 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ConstructionTracker.ConstructionTracker.Dto.TaskPhotoDto
+DEBUG 2025-08-14 01:21:32,170 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ConstructionTracker.ConstructionTracker.Dto.ConstructionTrackerUserDto
+DEBUG 2025-08-14 01:24:49,061 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2025-08-14 01:24:49,143 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2025-08-14 01:24:49,158 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ConstructionTracker.Web.Host.Startup.ConstructionTrackerWebHostModule, ConstructionTracker.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:24:49,160 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ConstructionTracker.ConstructionTrackerWebCoreModule, ConstructionTracker.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:24:49,161 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ConstructionTracker.ConstructionTrackerApplicationModule, ConstructionTracker.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:24:49,161 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ConstructionTracker.ConstructionTrackerCoreModule, ConstructionTracker.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:24:49,162 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:24:49,162 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:24:49,162 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:24:49,163 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:24:49,163 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ConstructionTracker.EntityFrameworkCore.ConstructionTrackerEntityFrameworkModule, ConstructionTracker.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:24:49,164 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:24:49,164 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:24:49,164 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:24:49,165 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:24:49,165 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:24:49,165 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:24:49,166 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2025-08-14 01:24:49,213 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2025-08-14 01:24:49,213 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2025-08-14 01:24:49,213 [1    ] o.Configuration.LanguageManagementConfig - Converted ConstructionTracker (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2025-08-14 01:24:49,213 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2025-08-14 01:24:49,475 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: ConstructionTracker.EntityFrameworkCore.ConstructionTrackerDbContext, ConstructionTracker.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:24:49,630 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2025-08-14 01:24:49,679 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2025-08-14 01:24:49,713 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2025-08-14 01:24:49,728 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: ConstructionTracker
+DEBUG 2025-08-14 01:24:49,749 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2025-08-14 01:24:49,756 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2025-08-14 01:24:49,762 [1    ] , Culture=neutral, PublicKeyToken=null]] - Start background worker: Abp.Authorization.Users.UserTokenExpirationWorker`2[[ConstructionTracker.MultiTenancy.Tenant, ConstructionTracker.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[ConstructionTracker.Authorization.Users.User, ConstructionTracker.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+DEBUG 2025-08-14 01:24:49,778 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 14 classes define auto mapping attributes
+DEBUG 2025-08-14 01:24:49,778 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ConstructionTracker.Users.Dto.CreateUserDto
+DEBUG 2025-08-14 01:24:49,781 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ConstructionTracker.Users.Dto.UserDto
+DEBUG 2025-08-14 01:24:49,781 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ConstructionTracker.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2025-08-14 01:24:49,781 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ConstructionTracker.Sessions.Dto.UserLoginInfoDto
+DEBUG 2025-08-14 01:24:49,781 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ConstructionTracker.Roles.Dto.PermissionDto
+DEBUG 2025-08-14 01:24:49,782 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ConstructionTracker.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2025-08-14 01:24:49,782 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ConstructionTracker.MultiTenancy.Dto.TenantDto
+DEBUG 2025-08-14 01:24:49,782 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ConstructionTracker.ConstructionTracker.Dto.ActivityLogDto
+DEBUG 2025-08-14 01:24:49,782 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ConstructionTracker.ConstructionTracker.Dto.ProjectDto
+DEBUG 2025-08-14 01:24:49,782 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ConstructionTracker.ConstructionTracker.Dto.QrCodeScanDto
+DEBUG 2025-08-14 01:24:49,782 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ConstructionTracker.ConstructionTracker.Dto.TaskDto
+DEBUG 2025-08-14 01:24:49,782 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ConstructionTracker.ConstructionTracker.Dto.TaskCommentDto
+DEBUG 2025-08-14 01:24:49,782 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ConstructionTracker.ConstructionTracker.Dto.TaskPhotoDto
+DEBUG 2025-08-14 01:24:49,782 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ConstructionTracker.ConstructionTracker.Dto.ConstructionTrackerUserDto
+DEBUG 2025-08-14 01:27:45,015 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2025-08-14 01:27:45,148 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2025-08-14 01:27:45,159 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ConstructionTracker.Web.Host.Startup.ConstructionTrackerWebHostModule, ConstructionTracker.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:27:45,160 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ConstructionTracker.ConstructionTrackerWebCoreModule, ConstructionTracker.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:27:45,161 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ConstructionTracker.ConstructionTrackerApplicationModule, ConstructionTracker.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:27:45,161 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ConstructionTracker.ConstructionTrackerCoreModule, ConstructionTracker.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:27:45,161 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:27:45,162 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:27:45,162 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:27:45,162 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:27:45,163 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ConstructionTracker.EntityFrameworkCore.ConstructionTrackerEntityFrameworkModule, ConstructionTracker.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:27:45,163 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:27:45,163 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:27:45,164 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:27:45,164 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:27:45,164 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:27:45,164 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:27:45,165 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2025-08-14 01:27:45,202 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2025-08-14 01:27:45,202 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2025-08-14 01:27:45,202 [1    ] o.Configuration.LanguageManagementConfig - Converted ConstructionTracker (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2025-08-14 01:27:45,202 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2025-08-14 01:27:45,460 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: ConstructionTracker.EntityFrameworkCore.ConstructionTrackerDbContext, ConstructionTracker.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:27:45,602 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2025-08-14 01:27:45,650 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2025-08-14 01:27:45,685 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2025-08-14 01:27:45,699 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: ConstructionTracker
+DEBUG 2025-08-14 01:27:45,720 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2025-08-14 01:27:45,726 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2025-08-14 01:27:45,732 [1    ] , Culture=neutral, PublicKeyToken=null]] - Start background worker: Abp.Authorization.Users.UserTokenExpirationWorker`2[[ConstructionTracker.MultiTenancy.Tenant, ConstructionTracker.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[ConstructionTracker.Authorization.Users.User, ConstructionTracker.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+DEBUG 2025-08-14 01:27:45,748 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 14 classes define auto mapping attributes
+DEBUG 2025-08-14 01:27:45,748 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ConstructionTracker.Users.Dto.CreateUserDto
+DEBUG 2025-08-14 01:27:45,750 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ConstructionTracker.Users.Dto.UserDto
+DEBUG 2025-08-14 01:27:45,751 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ConstructionTracker.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2025-08-14 01:27:45,751 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ConstructionTracker.Sessions.Dto.UserLoginInfoDto
+DEBUG 2025-08-14 01:27:45,751 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ConstructionTracker.Roles.Dto.PermissionDto
+DEBUG 2025-08-14 01:27:45,751 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ConstructionTracker.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2025-08-14 01:27:45,751 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ConstructionTracker.MultiTenancy.Dto.TenantDto
+DEBUG 2025-08-14 01:27:45,751 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ConstructionTracker.ConstructionTracker.Dto.ActivityLogDto
+DEBUG 2025-08-14 01:27:45,751 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ConstructionTracker.ConstructionTracker.Dto.ProjectDto
+DEBUG 2025-08-14 01:27:45,752 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ConstructionTracker.ConstructionTracker.Dto.QrCodeScanDto
+DEBUG 2025-08-14 01:27:45,752 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ConstructionTracker.ConstructionTracker.Dto.TaskDto
+DEBUG 2025-08-14 01:27:45,752 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ConstructionTracker.ConstructionTracker.Dto.TaskCommentDto
+DEBUG 2025-08-14 01:27:45,752 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ConstructionTracker.ConstructionTracker.Dto.TaskPhotoDto
+DEBUG 2025-08-14 01:27:45,752 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ConstructionTracker.ConstructionTracker.Dto.ConstructionTrackerUserDto
+DEBUG 2025-08-14 01:28:33,432 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2025-08-14 01:28:33,864 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2025-08-14 01:28:33,876 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ConstructionTracker.Web.Host.Startup.ConstructionTrackerWebHostModule, ConstructionTracker.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:28:33,877 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ConstructionTracker.ConstructionTrackerWebCoreModule, ConstructionTracker.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:28:33,878 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ConstructionTracker.ConstructionTrackerApplicationModule, ConstructionTracker.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:28:33,878 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ConstructionTracker.ConstructionTrackerCoreModule, ConstructionTracker.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:28:33,878 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:28:33,879 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:28:33,879 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:28:33,879 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:28:33,880 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ConstructionTracker.EntityFrameworkCore.ConstructionTrackerEntityFrameworkModule, ConstructionTracker.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:28:33,880 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:28:33,881 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:28:33,881 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:28:33,881 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:28:33,881 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:28:33,882 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:28:33,883 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2025-08-14 01:28:34,021 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2025-08-14 01:28:34,021 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2025-08-14 01:28:34,021 [1    ] o.Configuration.LanguageManagementConfig - Converted ConstructionTracker (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2025-08-14 01:28:34,021 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2025-08-14 01:28:34,300 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: ConstructionTracker.EntityFrameworkCore.ConstructionTrackerDbContext, ConstructionTracker.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:28:34,435 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2025-08-14 01:28:34,482 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2025-08-14 01:28:34,515 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2025-08-14 01:28:34,529 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: ConstructionTracker
+DEBUG 2025-08-14 01:28:34,548 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2025-08-14 01:28:34,554 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2025-08-14 01:28:34,560 [1    ] , Culture=neutral, PublicKeyToken=null]] - Start background worker: Abp.Authorization.Users.UserTokenExpirationWorker`2[[ConstructionTracker.MultiTenancy.Tenant, ConstructionTracker.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[ConstructionTracker.Authorization.Users.User, ConstructionTracker.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+DEBUG 2025-08-14 01:28:34,574 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 14 classes define auto mapping attributes
+DEBUG 2025-08-14 01:28:34,574 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ConstructionTracker.Users.Dto.CreateUserDto
+DEBUG 2025-08-14 01:28:34,577 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ConstructionTracker.Users.Dto.UserDto
+DEBUG 2025-08-14 01:28:34,577 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ConstructionTracker.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2025-08-14 01:28:34,577 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ConstructionTracker.Sessions.Dto.UserLoginInfoDto
+DEBUG 2025-08-14 01:28:34,577 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ConstructionTracker.Roles.Dto.PermissionDto
+DEBUG 2025-08-14 01:28:34,577 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ConstructionTracker.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2025-08-14 01:28:34,577 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ConstructionTracker.MultiTenancy.Dto.TenantDto
+DEBUG 2025-08-14 01:28:34,577 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ConstructionTracker.ConstructionTracker.Dto.ActivityLogDto
+DEBUG 2025-08-14 01:28:34,577 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ConstructionTracker.ConstructionTracker.Dto.ProjectDto
+DEBUG 2025-08-14 01:28:34,578 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ConstructionTracker.ConstructionTracker.Dto.QrCodeScanDto
+DEBUG 2025-08-14 01:28:34,578 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ConstructionTracker.ConstructionTracker.Dto.TaskDto
+DEBUG 2025-08-14 01:28:34,578 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ConstructionTracker.ConstructionTracker.Dto.TaskCommentDto
+DEBUG 2025-08-14 01:28:34,578 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ConstructionTracker.ConstructionTracker.Dto.TaskPhotoDto
+DEBUG 2025-08-14 01:28:34,578 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ConstructionTracker.ConstructionTracker.Dto.ConstructionTrackerUserDto
+DEBUG 2025-08-14 01:32:32,209 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2025-08-14 01:32:32,242 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2025-08-14 01:32:32,257 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ConstructionTracker.Web.Host.Startup.ConstructionTrackerWebHostModule, ConstructionTracker.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:32:32,259 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ConstructionTracker.ConstructionTrackerWebCoreModule, ConstructionTracker.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:32:32,259 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ConstructionTracker.ConstructionTrackerApplicationModule, ConstructionTracker.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:32:32,260 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ConstructionTracker.ConstructionTrackerCoreModule, ConstructionTracker.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:32:32,260 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:32:32,260 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:32:32,260 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:32:32,261 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:32:32,261 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ConstructionTracker.EntityFrameworkCore.ConstructionTrackerEntityFrameworkModule, ConstructionTracker.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:32:32,262 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:32:32,262 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:32:32,262 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:32:32,262 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:32:32,263 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:32:32,263 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:32:32,264 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2025-08-14 01:32:32,314 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2025-08-14 01:32:32,314 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2025-08-14 01:32:32,314 [1    ] o.Configuration.LanguageManagementConfig - Converted ConstructionTracker (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2025-08-14 01:32:32,314 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2025-08-14 01:32:32,684 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: ConstructionTracker.EntityFrameworkCore.ConstructionTrackerDbContext, ConstructionTracker.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2025-08-14 01:32:32,884 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2025-08-14 01:32:32,934 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2025-08-14 01:32:32,967 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2025-08-14 01:32:32,982 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: ConstructionTracker
+DEBUG 2025-08-14 01:32:33,003 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2025-08-14 01:32:33,010 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2025-08-14 01:32:33,015 [1    ] , Culture=neutral, PublicKeyToken=null]] - Start background worker: Abp.Authorization.Users.UserTokenExpirationWorker`2[[ConstructionTracker.MultiTenancy.Tenant, ConstructionTracker.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[ConstructionTracker.Authorization.Users.User, ConstructionTracker.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+DEBUG 2025-08-14 01:32:33,032 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 14 classes define auto mapping attributes
+DEBUG 2025-08-14 01:32:33,032 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ConstructionTracker.Users.Dto.CreateUserDto
+DEBUG 2025-08-14 01:32:33,035 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ConstructionTracker.Users.Dto.UserDto
+DEBUG 2025-08-14 01:32:33,035 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ConstructionTracker.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2025-08-14 01:32:33,035 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ConstructionTracker.Sessions.Dto.UserLoginInfoDto
+DEBUG 2025-08-14 01:32:33,035 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ConstructionTracker.Roles.Dto.PermissionDto
+DEBUG 2025-08-14 01:32:33,035 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ConstructionTracker.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2025-08-14 01:32:33,035 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ConstructionTracker.MultiTenancy.Dto.TenantDto
+DEBUG 2025-08-14 01:32:33,036 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ConstructionTracker.ConstructionTracker.Dto.ActivityLogDto
+DEBUG 2025-08-14 01:32:33,036 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ConstructionTracker.ConstructionTracker.Dto.ProjectDto
+DEBUG 2025-08-14 01:32:33,036 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ConstructionTracker.ConstructionTracker.Dto.QrCodeScanDto
+DEBUG 2025-08-14 01:32:33,036 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ConstructionTracker.ConstructionTracker.Dto.TaskDto
+DEBUG 2025-08-14 01:32:33,036 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ConstructionTracker.ConstructionTracker.Dto.TaskCommentDto
+DEBUG 2025-08-14 01:32:33,036 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ConstructionTracker.ConstructionTracker.Dto.TaskPhotoDto
+DEBUG 2025-08-14 01:32:33,036 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ConstructionTracker.ConstructionTracker.Dto.ConstructionTrackerUserDto
+ERROR 2025-08-14 01:32:38,320 [1    ] .EntityFrameworkCore.Database.Connection - An error occurred using the connection to database 'ConstructionTrackerDb' on server 'tcp://localhost:5432'.
