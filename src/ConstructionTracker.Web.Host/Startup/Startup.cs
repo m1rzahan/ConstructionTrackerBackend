@@ -72,10 +72,10 @@ namespace ConstructionTracker.Web.Host.Startup
         options.AddPolicy(
             "MobileApp",
             builder => builder
-                .SetIsOriginAllowed(origin => true)  // Tüm origin'lere izin ver
+                .AllowAnyOrigin()  // Tüm origin'lere izin ver
                 .AllowAnyHeader()
                 .AllowAnyMethod()
-                .AllowCredentials() // Credentials'ı aktif et
+                .DisallowCredentials() // Credentials'ı devre dışı bırak
         );
     }
 );
