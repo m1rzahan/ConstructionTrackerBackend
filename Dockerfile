@@ -10,17 +10,20 @@ FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
 
 # Copy solution file first
-COPY ["*.sln", "./"]
+COPY ["ConstructionTracker.sln", "./"]
 
-# Copy all csproj files and restore dependencies
+# Copy all csproj files
 COPY ["src/ConstructionTracker.Web.Host/ConstructionTracker.Web.Host.csproj", "src/ConstructionTracker.Web.Host/"]
 COPY ["src/ConstructionTracker.Web.Core/ConstructionTracker.Web.Core.csproj", "src/ConstructionTracker.Web.Core/"]
 COPY ["src/ConstructionTracker.Application/ConstructionTracker.Application.csproj", "src/ConstructionTracker.Application/"]
 COPY ["src/ConstructionTracker.Core/ConstructionTracker.Core.csproj", "src/ConstructionTracker.Core/"]
 COPY ["src/ConstructionTracker.EntityFrameworkCore/ConstructionTracker.EntityFrameworkCore.csproj", "src/ConstructionTracker.EntityFrameworkCore/"]
 
-# Restore all dependencies
-RUN dotnet restore
+# Copy NuGet.Config
+COPY ["NuGet.Config", "./"]
+
+# Restore dependencies
+RUN dotnet restore "src/ConstructionTracker.Web.Host/ConstructionTracker.Web.Host.csproj" --verbosity normal
 
 # Copy all source code
 COPY . .
