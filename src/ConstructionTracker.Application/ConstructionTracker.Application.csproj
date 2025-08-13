@@ -13,5 +13,6 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Abp.ZeroCore" Version="10.2.0" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.0.1" />
   </ItemGroup>
 </Project>
