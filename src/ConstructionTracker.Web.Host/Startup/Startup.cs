@@ -126,7 +126,8 @@ namespace ConstructionTracker.Web.Host.Startup
             app.UseAuthentication();
             app.UseAuthorization();
 
-            app.UseAbpRequestLocalization();
+            // Geçici olarak localization'ı devre dışı bırak
+            // app.UseAbpRequestLocalization();
 
             app.UseEndpoints(endpoints =>
             {
