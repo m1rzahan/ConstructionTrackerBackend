@@ -12,3 +12,6 @@ restartPolicyMaxRetries = 10
 [deploy.envs]
 ASPNETCORE_ENVIRONMENT = "Production"
 ASPNETCORE_URLS = "http://0.0.0.0:${PORT}"
+ConnectionStrings__Default = "Host=${DATABASE_URL};Database=ConstructionTrackerDb;Username=${DB_USERNAME};Password=${DB_PASSWORD};"
+App__ServerRootAddress = "https://${RAILWAY_PUBLIC_DOMAIN}/"
+App__ClientRootAddress = "https://${RAILWAY_PUBLIC_DOMAIN}/"
