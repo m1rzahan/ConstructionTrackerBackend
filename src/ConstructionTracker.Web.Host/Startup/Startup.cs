@@ -75,6 +75,7 @@ namespace ConstructionTracker.Web.Host.Startup
                 .AllowAnyOrigin()  // Mobile app için tüm origin'lere izin ver
                 .AllowAnyHeader()
                 .AllowAnyMethod()
+                .DisallowCredentials() // Credentials'ı devre dışı bırak
         );
     }
 );
