@@ -9,11 +9,26 @@ EXPOSE 44311
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
 
-# Copy everything
+# Copy NuGet.Config first
+COPY ["NuGet.Config", "./"]
+
+# Copy solution file
+COPY ["ConstructionTracker.sln", "./"]
+
+# Copy all csproj files
+COPY ["src/ConstructionTracker.Web.Host/ConstructionTracker.Web.Host.csproj", "src/ConstructionTracker.Web.Host/"]
+COPY ["src/ConstructionTracker.Web.Core/ConstructionTracker.Web.Core.csproj", "src/ConstructionTracker.Web.Core/"]
+COPY ["src/ConstructionTracker.Application/ConstructionTracker.Application.csproj", "src/ConstructionTracker.Application/"]
+COPY ["src/ConstructionTracker.Core/ConstructionTracker.Core.csproj", "src/ConstructionTracker.Core/"]
+COPY ["src/ConstructionTracker.EntityFrameworkCore/ConstructionTracker.EntityFrameworkCore.csproj", "src/ConstructionTracker.EntityFrameworkCore/"]
+
+# Restore dependencies
+RUN dotnet restore --verbosity normal
+
+# Copy all source code
 COPY . .
 
-# Restore and build
-RUN dotnet restore
+# Build
 RUN dotnet build -c Release -o /app/build
 
 # Publish
